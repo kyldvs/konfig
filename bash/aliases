@@ -17,7 +17,7 @@ alias gd="git diff"
 alias go="git checkout"
 alias gp="git remote prune origin"
 
-alias gg="git log -15 --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s - %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias gg="git log -15 --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) %C(white)- %s - %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias gl="git log -15 --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s - %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
 # ordered list of directory sizes
