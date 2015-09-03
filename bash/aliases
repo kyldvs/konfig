@@ -9,6 +9,7 @@ alias hgs="hg status"
 alias hgd="hg diff"
 alias hgt="hg diff -c tip"
 alias hgo="hg checkout"
+alias hgsr="hg status --rev .^"
 
 # git
 alias ga="git add"
@@ -17,12 +18,14 @@ alias gs="git status"
 alias gd="git diff"
 alias go="git checkout"
 alias gp="git remote prune origin"
+alias gg="git log -15 --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias gl="git log -15 --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset)%C(white) %s%C(reset)%C(bold green) (%ar)%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
 # arc
 alias adp="arc diff --preview"
 
-alias gg="git log -15 --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset)%C(bold yellow)%d%C(reset)' --all"
-alias gl="git log -15 --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset)%C(white) %s%C(reset)%C(bold green) (%ar)%C(reset)%C(bold yellow)%d%C(reset)' --all"
+# tmux
+alias tt="(tmux ls | grep -vx attached && tmux at) || tmux"
 
 # ordered list of directory sizes
 sizes() {

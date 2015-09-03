@@ -1,0 +1,15 @@
+#! /bin/bash
+
+mytouch() {
+  DIR=$(dirname "$1")
+  while true; do
+    read -p "create \"$DIR\"? [Yn] " yn
+    case $yn in
+      [Nn]* ) echo "exiting"; exit;;
+      * ) mkdir -p "$DIR"; breal;;
+    esac
+  done
+  touch $1
+}
+touch "$1" || mytouch "$@"
+
