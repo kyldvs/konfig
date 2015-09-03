@@ -6,7 +6,7 @@ mytouch() {
     read -p "create \"$DIR\"? [Yn] " yn
     case $yn in
       [Nn]* ) echo "exiting"; exit;;
-      * ) mkdir -p "$DIR"; breal;;
+      * ) mkdir -p "$DIR"; break;;
     esac
   done
   touch $1
