@@ -27,6 +27,11 @@ alias adp="arc diff --preview"
 # tmux
 alias tt="(tmux ls | grep -vx attached && tmux at) || tmux"
 
+# connect using mosh
+alias con="mosh -6 dev"
+alias con2="mosh -6 dev2"
+alias con3="mosh -6 dev3"
+
 # ordered list of directory sizes
 sizes() {
   du -sk ./* | \

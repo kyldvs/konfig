@@ -1,8 +1,6 @@
 
 # easier nuclide development
-FBOBJC="~/fbsource/fbobjc"
-alias nbuild="(cd $FBOBJC && ./Tools/Nuclide/scripts/dev/setup)"
-alias ncd="cd $FBOBJC/Tools/Nuclide/pkg/nuclide"
-
-# easier format-js development
-alias fjs-test="(ncd && cd ./format-js-base && npm test)"
+alias ncd="cd $LOCAL_FBSOURCE/fbobjc/Tools/Nuclide/pkg/nuclide"
+alias nbuild="(cd $LOCAL_FBSOURCE/fbobjc && ./Tools/Nuclide/scripts/dev/setup)"
+alias npush="(cd $LOCAL_FBSOURCE/fbobjc/Tools/Nuclide && ./scripts/dev/fb/devserver-setup)"
+alias nud="(cd $LOCAL_FBSOURCE/fbobjc/Tools/Nuclide && ./scripts/dev/fb/upload_dependencies)"
