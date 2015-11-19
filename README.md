@@ -8,18 +8,18 @@ Add parts of this that you want to your `.bash_profile`
 
 ```bash
 # UPDATE THESE
-KONFIG_ROOT="path/to/konfig"
+KONFIG_ROOT=path/to/konfig
 
-source $KONFIG_ROOT/bash/prompt         # minimalistic prompt
-source $KONFIG_ROOT/bash/aliases        # aliases for general productivity
-alias touch="$KONFIG_ROOT/bash/mytouch" # better touch command
+source "$KONFIG_ROOT/bash/prompt"         # minimalistic prompt
+source "$KONFIG_ROOT/bash/aliases"        # aliases for general productivity
+alias touch="$KONFIG_ROOT/bash/mytouch"   # better touch command
 
 # UPDATE THESE
 DEVSERVER=kad.sb.facebook.com
 DEVSERVER_FBSOURCE="/data/users/kad/fbsource"
 LOCAL_FBSOURCE="~/fbsource"
 
-source $KONFIG_ROOT/bash/nuclide        # aliases specific to nuclide
+source "$KONFIG_ROOT/bash/nuclide"        # aliases specific to nuclide
 ```
 
 ### Usage
