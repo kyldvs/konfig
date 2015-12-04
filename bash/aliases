@@ -1,6 +1,6 @@
 
 # hg
-alias hgl="hg sl"
+alias hgl="hg --config extensions.pager=! sl"
 alias hga="hg add"
 alias hgc="hg commit"
 alias hgm="hg commit -Am"
