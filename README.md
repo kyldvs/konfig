@@ -9,6 +9,9 @@ Add parts of this that you want to your `.bash_profile`
 ```bash
 # UPDATE THESE
 export KONFIG_ROOT=path/to/konfig
+export KONFIG_PROMPT_PREFIX="TAG"         # short tag that is prefixed to
+                                          # the prompt to identifiy which
+                                          # server you are currently on
 
 source "$KONFIG_ROOT/bash/prompt"         # minimalistic prompt
 source "$KONFIG_ROOT/bash/aliases"        # aliases for general productivity
