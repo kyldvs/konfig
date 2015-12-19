@@ -31,7 +31,7 @@ alias tt="(tmux ls | grep -vx attached && tmux at) || tmux"
 alias con="mosh -6 dev"
 alias con2="mosh -6 dev2"
 alias con3="mosh -6 dev3"
-alias cona="ssh albionmath"
+alias cona="mosh albionmath"
 
 # ordered list of directory sizes
 sizes() {
