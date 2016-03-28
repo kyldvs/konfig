@@ -20,12 +20,12 @@ vc() {
   if [ $VCISGIT == 1 ]
   then
     case $1 in
-      s) git status "$@" ;;
+      s) git status "${@:2}" ;;
     esac
   elif [ $VCISHG == 1 ]
   then
     case $1 in
-      s) hg status "$@" ;;
+      s) hg status "${@:2}" ;;
     esac
   else
     echo "\"`pwd`\" is not tracked by a known version control system."
