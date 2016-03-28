@@ -12,7 +12,7 @@ vc() {
   fi
 
   VCISHG=0
-  if [ `hg root` ]
+  if [ `hg root 2> /dev/null` ]
   then
     VCISHG=1
   fi
