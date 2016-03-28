@@ -1,3 +1,36 @@
+# version control
+
+vc() {
+  # Figure out what kind of a repo this is
+  VCISGIT=0
+  if [ -d .git ]
+  then
+    VCISGIT=1
+  elif [ `git rev-parse --git-dir 2> /dev/null` ]
+  then
+    VCISGIT=1
+  fi
+
+  VCISHG=0
+  if [ `hg root` ]
+  then
+    VCISHG=1
+  fi
+
+  if [ $VCISGIT == 1 ]
+  then
+    case $1 in
+      s) git status ;;
+    esac
+  elif [ $VCISHG == 1 ]
+  then
+    case $1 in
+      s) hg status ;;
+    esac
+  else
+    echo "\"`pwd`\" is not tracked by a known version control system."
+  fi
+}
 
 # hg
 alias hgl="hg --config extensions.pager=! sl"
